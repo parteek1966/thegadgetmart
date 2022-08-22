@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login to continue shopping</title>
+  <link rel="stylesheet" href="nav.css">
+  <style>
+    * {
+      font-family: sans-serif;
+
+    }
+
+
+    body {
+      background-image: url(Images/abdul-a-0si69BeGjoI-unsplash.jpg);
+      background-size: cover;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .box1 {
+      background-image: url(Images/login-form-design-03.jpg);
+      background-repeat: no-repeat;
+      height: 450px;
+      width: 200px;
+      margin: 80px 200px 0px 400px;
+    }
+
+    form {
+      border: 3px solid #f1f1f1;
+      width: 700px;
+      margin-left: 420px;
+    }
+
+    input[type=text],
+    input[type=password] {
+      width: 400px;
+      padding: 12px 20px;
+      margin: 20px 0 0 50px;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      color: white;
+    }
+
+    .container button {
+      background-color: black;
+      color: white;
+      margin: 8px 0;
+      height: 50px;
+      border: none;
+      cursor: pointer;
+      width: 200px;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+
+
+
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+
+      .cancelbtn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="hero">
+      <nav>
+        <a href="home.html" style="text-decoration: none;"><h2 class="logo">The Gadget <span>Mart</span>
+
+        </h2></a>
+
+
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><img src="Images/loginlogo.jpg" style="height: 25px; margin-bottom: -15px; margin-right: -30px; display: none;" id="loginloogo"> </li>
+         
+          <li><a href="#" id="namenew" ></a></li>
+       
+
+        </ul>
+
+      </nav>
+    </div>
+</header>
+<div id="hiddall">
+  <h2 style="color: white; text-align: center;">Login Form</h2>
+</div>
+
+    <form id="loginform"> 
+   
+
+      <div class="container">
+        <label for="uname" style="color: white; margin-left: 80px;"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" style="color: black;" name="uname" id="name" required >
+        <br>
+        <label for="psw" style="color: white; margin-left: 80px;"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" style="color: black;" required>
+        <br><br>
+        <button type="button" style="margin-left: 300px;" onclick="changename()" id="loginbtn1">Login</button>
+        <label style="color: white;">
+          <br>
+          <input type="checkbox" checked="checked" name="remember" style="margin-left: 350px;"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1;height: 40px;">
+        <button type="button" class="cancelbtn" style="height: 30px; margin: 5px 10px 10px 10px;">Cancel</button>
+        <span class="psw">Forgot <a href="#" style="color: black;">password?</a></span>
+      </div>
+    </form>
+ <div id="hideall">
+
+  <h3 style="color: white; text-align:center; ">New to Gadget Mart?<a href="signup.html" style="color: white;" > Create
+    an account</a></h3>
+
+ </div>
+            <div style="display: none;text-align: center; margin: 200px;" id="welcomeback" >
+             <h1 style="color: white;">Welcome Back</h1>
+             <h2 id="nameneww" style="color: red;"></h2>
+            </div>
+
+
+    <script>
+        
+         function changename(){
+                   document.getElementById('namenew').innerText=document.getElementById('name').value;
+                   document.getElementById('nameneww').innerText=document.getElementById('name').value;
+                  var name =  document.getElementById('namenew');
+                   
+                  name.style.color="red";
+                  
+                  var img = document.getElementById('loginloogo');
+                  img.style.display = "block";
+                 var formm = document.getElementById('loginform');
+                 formm.style.display="none";
+                 var formmm = document.getElementById('hideall');
+                 formmm.style.display="none";
+                 var formmmm = document.getElementById('hiddall');
+                 formmmm.style.display="none";
+                 document.getElementById("welcomeback").style.display="block"
+                 
+                   
+         }
+
+    </script>
+
+
+</body>
+
+</html>

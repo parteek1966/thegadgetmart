@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One and only gadget hub</title>
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="product.css">
+
+  <style>
+    * {
+      font-family: san6s-serif;
+      color: black;
+    }
+
+    body {
+     overflow-x: hidden;
+      background-size: cover;
+    }
+
+    .bottom fieldset {
+      display: block;
+      margin: 20px 1%;
+      margin-bottom: 20px;
+      padding: 0 auto;
+      padding: 15px 0;
+      border: 0;
+      border-top: 1px solid #DDD;
+      width: 98%;
+    }
+
+    .bottom legend {
+      display: table;
+      min-width: 0px;
+      max-width: 70%;
+      position: relative;
+      margin: auto;
+      padding: 5px 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+    #hoverr img:hover{
+      transform: scale(1.2);
+    }
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <header>
+
+    <div class="hero">
+      <nav>
+        <a href="home.html" style="text-decoration: none;"><h2 class="logo">The Gadget <span>Mart</span>
+
+        </h2></a>
+
+
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <button type="button"><a href="login.html" style="color: white; text-decoration:none;">Log In</a></button>
+
+        </ul>
+
+      </nav>
+    </div>
+    </header>
+    <div class="topstart">
+      <h1 style="margin-left:600px; font-family:fantasy;"></h1>
+      <img src="images/lcdbanner.png" style="width: 100%; height:300px;">
+    </div>
+    <div style="display: inline;">
+      <h1 style="margin-left: 20px;">New Launches</h1>
+      <button
+        style="float: right; height:30px; width: 100px; margin: -45px 20px 0 0px; background-color: black; color: white;"><a
+          href="#" style="text-decoration: none; color:white;" onclick="showmore1()">View All</a></button>
+    </div>
+    <div  id="hoverr">
+     <div>
+      <table >
+       
+          <tr>
+            <td>
+          <div class="product-container" style="margin-top: -80px;">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">25% off</span>
+                   <a href="smarttv1.html"> <img src="Images/lcdnew1.jpg" class="product-thumb" alt=""></a>
+                    <button class="card-btn">add to whislist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">realme 108 cm (43 inch) </h2>
+                    <p class="product-short-des">Full HD LED Smart Android TV</p>
+                    <span class="price">20,899</span><span class="actual-price">27,999</span>
+                    <div class="page-wrapper">
+                      <button id="addtocart" onclick="changecart()">
+                        Add to Cart
+                        <span class="cart-item"></span>
+                      </button>
+                    </div>  
+                    
+                </div>
+            </div>
+            </div>
+            </td>
+            <td>
+            <div class="product-container"  style="margin-top: -80px;">
+              <div class="product-card">
+                  <div class="product-image">
+                      <span class="discount-tag">38% off</span>
+                      <img src="Images/lcdnew2.jpg" class="product-thumb" alt="">
+                      <button class="card-btn">add to whislist</button>
+                  </div>
+                  <div class="product-info">
+                      <h2 class="product-brand">LG UQ7500 </h2>
+                      <p class="product-short-des">Ultra HD (4K) LED Smart </p>
+                      <span class="price">30,990</span><span class="actual-price">49,990</span>
+                      <div class="page-wrapper">
+                        <button id="addtocart"  onclick="changecart()">
+                          Add to Cart
+                          <span class="cart-item"></span>
+                        </button>
+                      </div>  
+                  </div>
+             </div>
+             </div>
+            </td>
+            <td>
+              <div class="product-container"  style="margin-top: -80px;">
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-tag">47% off</span>
+                        <img src="Images/lcdnew3.jpg" class="product-thumb" alt="">
+                        <button class="card-btn">add to whislist</button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">Infinix 80 cm</h2>
+                        <p class="product-short-des">a short line about the cloth..</p>
+                        <span class="price">8,999</span><span class="actual-price">16,999</span>
+                        <div class="page-wrapper">
+                          <button id="addtocart"  onclick="changecart()">
+                            Add to Cart
+                            <span class="cart-item"></span>
+                          </button>
+                        </div>  
+                    </div>
+                </div>
+                </div>
+              </td>
+              </tr>
+            
+              
+                  </div>
+        <br><br><br><br>
+      </table>
+
+  <br><br><br><br><br>
+  <div style="display: inline;" >
+    <h1 style="margin-left: 20px;">Smart Tv's</h1>
+    <button
+      style="float: right; height:30px; width: 100px; margin: -45px 20px 0 0px; background-color: black; color: white;"><a
+        href="#" style="text-decoration: none; color:white;">View All</a></button>
+  </div>
+  <table >
+       
+    <tr>
+      <td>
+    <div class="product-container" style="margin-top: -80px;">
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">44% off</span>
+              <a href="#">
+              <img src="Images/smarttv1.jpg" class="product-thumb" alt="" ></a>
+              <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Mi 5A 80 cm</h2>
+              <p class="product-short-des">HD Ready LED Smart Android TV </p>
+              <span class="price">13,999</span><span class="actual-price">24,999</span>
+              <div class="page-wrapper">
+                <button id="addtocart"  onclick="changecart()">
+                  Add to Cart
+                  <span class="cart-item"></span>
+                </button>
+              </div>  
+          </div>
+      </div>
+      </div>
+      </td>
+      <td>
+      <div class="product-container" style="margin-top: -80px;">
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">31% off</span>
+                <img src="Images/smarttv2.jpg" class="product-thumb" alt="">
+                <button class="card-btn">add to whislist</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">LG 80 cm </h2>
+                <p class="product-short-des"> HD Ready LED Smart </p>
+                <span class="price">14,990</span><span class="actual-price">21,990</span>
+                <div class="page-wrapper">
+                  <button id="addtocart"  onclick="changecart()">
+                    Add to Cart
+                    <span class="cart-item"></span>
+                  </button>
+                </div>  
+            </div>
+       </div>
+       </div>
+      </td>
+      <td>
+        <div class="product-container" style="margin-top: -80px;">
+          <div class="product-card">
+              <div class="product-image">
+                  <span class="discount-tag">32% off</span>
+                  <img src="Images/smarttv3.jpg" class="product-thumb" alt="">
+                  <button class="card-btn">add to whislist</button>
+              </div>
+              <div class="product-info">
+                  <h2 class="product-brand">OnePlus Y1 </h2>
+                  <p class="product-short-des"> HD Ready LED Smart Android TV </p>
+                  <span class="price">13,999</span><span class="actual-price">19,999</span>
+                  <div class="page-wrapper">
+                    <button id="addtocart" >
+                      Add to Cart
+                      <span class="cart-item"></span>
+                    </button>
+                  </div>  
+              </div>
+          </div>
+          </div>
+        </td>
+        </tr>
+        <br><br><br><br>
+        <br>
+        <br>
+        <br>
+  
+  </table>
+  <br><br><br><br>
+  <br>
+  <br>
+  <br>
+    <div style="display: inline;">
+      <h2 style="margin-left: 60px;">Shop By Brands</h2>
+    </div>
+    <div class="brands">
+      <table>
+        <tr>
+          <td><img src="Images/brandlogo15.png" style="margin: 20px 100px 20px 220px; height: 120px; width: 150px;"></td>
+          <td><img src="Images/brandlogo16.png" style="margin: 20px 100px 20px 50px; height: 120px; width: 150px;"></td>
+          <td><img src="Images/brandlogo8.png" style="margin: 20px 100px 20px 50px; height: 200px; width: 150px;"></td>
+          <td><img src="Images/brandlogo1.jpg" style="margin: 20px 100px 20px 50px; height: 120px; width: 150px;"></td>
+          
+        </tr>
+        <tr>
+            <td><img src="Images/brandlogo2.jpg" style="margin: 20px 100px 20px 220px; height: 120px; width: 150px;"></td>
+            <td><img src="Images/brandlogo3.png" style="margin: 20px 100px 20px 50px; height: 120px; width: 150px;"></td>
+            <td><img src="Images/speakerlogo4.png" style="margin: 20px 100px 20px 50px; height: 120px; width: 150px;"></td>
+            <td><img src="Images/speakerlogo5.png" style="margin: 20px 100px 20px 50px; height: 120px; width: 150px;"></td>
+            
+          </tr>
+    
+
+     
+      </table>
+
+    </div>
+
+      </div>
+  
+    <div class="bottom">
+      <fieldset>
+        <legend>Our Services</legend>
+        <table>
+          <tr>
+
+            <td style="display:inline;"><img src="Images/lastlogo1.png" style="margin-left:150px;">
+            </td>
+            <td>
+              <p style="font-size: larger; margin:2px 30px 0 0px">Free Delievery</p>
+            </td>
+            <td style="display:inline;"><img src="Images/lastlogo2.png" style="margin-left:50px;">
+            </td>
+            <td>
+              <p style="font-size: larger; margin:2px 30px 0 0px">Sales And Discounts</p>
+            </td>
+
+            <td style="display:inline;"><img src="Images/lastlogo3.jpg"
+                style="height: 60px; width:60px; margin-left: 50px;">
+            </td>
+            <td>
+              <p style="font-size: larger; margin:1px 30px 0 0px">Easy Return Policy</p>
+            </td>
+
+
+            <td><img src="Images/lastlogo4.png" style="margin-left:50px;"></td>
+
+            <td>
+              <p style="font-size: larger; margin-top: 15px;">Quality Assurance</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p style="margin-left:180px;">All India free delivery on<br> orders above 9999/-</p>
+            </td>
+            <td colspan="2">
+              <p style="margin-left:50px;">Flat 50% OFF, Hurry up before the stock ends</p>
+            </td>
+            <td colspan="2">
+              <p style="margin-left:80px;">14 Days Hassle Free Return</p>
+            </td>
+            <td colspan="2">
+              <p style="margin-left:100px;">When quality is in our mind <br>Defect will stay behind.</p>
+            </td>
+          </tr>
+        </table>
+
+
+
+      </fieldset>
+
+    </div>
+   <script>
+    function changecart(){
+      var one = document.getElementById("addtocart");
+      one.innerText = "Go To Cart";
+      one.style.backgroundColor = "black";
+      one.style.color = "white";
+      
+    }
+        
+   </script> 
+</body>
+
+
+</html>

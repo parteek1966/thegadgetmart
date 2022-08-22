@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="slider.css">
+
+  <title>One and only gadget hub</title>
+  <style>
+    button:hover{
+     border: 3px solid rgb(19, 118, 210);
+    }
+   
+    * {
+      font-family: sans-serif;
+    }
+    .secondimg img:hover{
+      outline: 5px solid white;
+    }
+    .saleofday img:hover{
+      outline: 5px solid white;
+    }
+
+    body {
+      background-image: url(images/loginback.jpg);
+    }
+
+    input[type=radio] {
+    border: 0;
+    height: 2em;
+    width: 20px;
+}
+    .secondimg {
+      margin: 30px 50px 0px 160px;
+    }
+
+    .secondimg img {
+      margin-right: 20px;
+      margin-bottom: -40px;
+    }
+
+    .products {
+      margin: 100px;
+    }
+
+    .bottom fieldset {
+      display: block;
+      margin: 20px 1%;
+      margin-bottom: 20px;
+      padding: 0 auto;
+      padding: 15px 0;
+      border: 0;
+      border-top: 1px solid #DDD;
+      width: 98%;
+      color: white;
+    }
+
+    .bottom legend {
+      display: table;
+      min-width: 0px;
+      max-width: 70%;
+      position: relative;
+      margin: auto;
+      padding: 5px 20px;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+    }
+   .slides input{
+    border-radius: 10px;
+    border: 2px solid green;
+    padding: 5px;
+    margin-right: 20px;
+   }
+  .secondimg a:hover img{
+    transform: scale(1.2);
+  
+  }
+  .bottom{
+    margin-top: -300px;
+  } 
+  
+
+.contact-info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+    flex: 1;
+    max-width: 300px;
+    height: 140px;
+    background-color: #444;
+    margin: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    font-size: 32px;
+    color: #ea8685;
+    transition: .3s linear;
+}
+
+.card:hover .icon{
+    transform: scale(4);
+    opacity: 0;
+}
+
+.card-content h3,
+.card-content span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    opacity: 0;
+}
+
+.card-content h3{
+    top: 20px;
+    text-transform: uppercase;
+    color: #ea8685;
+}
+
+.card-content span{
+    bottom: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.card:hover h3{
+    opacity: 1;
+    top: 46px;
+    transition: .3s linear .3s;
+}
+
+.card:hover span{
+    opacity: 1;
+    bottom: 46px;
+    transition: .3s linear .3s;
+}
+
+
+@media screen and (max-width:900px){
+    .card{
+        flex: 100%;
+        max-width: 500px;
+    }
+}
+      
+  </style>
+</head>
+
+<body>
+  <header>
+
+    <div class="hero">
+      <nav>
+        <a href="home.html" style="text-decoration: none;"><h2 class="logo">The Gadget <span>Mart</span>
+
+        </h2></a>
+
+
+        <ul>
+          <li><a href="#" style="color: red;" class="hoverrr">Home</a></li>
+          <li><a href="categories.html" class="hoverr">Categories</a></li>
+          <li><a href="#" class="hoverr">Services</a ></li>
+          <li><a href="#" class="hoverr">About Us</a></li>
+         
+          <li><a href="feedback.html" class="hover">Feedback</a></li>
+
+          <button type="button"><a href="login.html" style="color: white; text-decoration:none;">Log In</a></button>
+
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+
+
+  <div class="firstimg">
+    <img src="Images/firstimg.png " style="width: 100%; height:300px;" id="firstimg">
+  </div>
+
+<div class="slider">
+  <div class="slides" style="margin-left: 650px; ">
+    <!--radio buttons start-->
+    <input type="radio" name="radio-btn" id="radio1" onclick="changeimage1()" onchange="changeimage()">
+    <input type="radio" name="radio-btn" id="radio2" onclick="changeimage2()" >
+    <input type="radio" name="radio-btn" id="radio3" onclick="changeimage3()" >
+    <input type="radio" name="radio-btn" id="radio4" onclick="changeimage4()">
+    <!--radio buttons end-->
+    <!--slide images start-->
+    
+  <!--manual navigation end-->
+</div>
+<!--image slider end-->
+</div>
+
+  <div class="secondimg">
+   <a href="#">  <img src="Images/banner1.webp" >  </a>
+   <a href="#">  <img src="Images/banner2.webp" >  </a>
+   <a href="#">  <img src="Images/banner3.webp" >  </a>
+   
+  </div>
+  <div class="product" id="product" style="margin-top: 100px;">
+    <img src="Images/category1.jpg" alt="" class="productImg" onclick="change1()">
+    <div class="productDetails">
+        <h1 class="productTitle">HP RYZEN 3 </h1>
+        <h2 class="productPrice">31,990/-</h2>
+        <p class="productDesc">Dual Core 3250U (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce GTX 1650/144 Hz) </p>
+      
+        <a href="asus.html"><button class="productButton" >BUY NOW!</button></a>
+    </div>
+    </div>
+  <div class="saleofday">
+    <img src="Images/saleofday_one.png" style="margin-top: 100px; height:100px; margin-left:500px;">
+    <br>
+    <br>
+    <img src="Images/saleofday_two.png" style="width: 100%;">
+  </div>
+  <div class="products">
+    
+    <button style="background-color:white; color:black; margin: 30px 0 0 300px; height: 40px; width: 200px;" onclick="changepage1()" id="btnn1">Best-Seller
+      Smartphones</button>
+    <button style="background-color:white; color:black; margin: 30px 0 0 20px; height: 40px; width: 200px;" onclick="changepage2()">Most Viewed
+      Products</button>
+    <button style="background-color:white; color:black; margin: 30px 0 0 20px; height: 40px; width: 200px;" onclick="changepage3()">Top-Rated
+      Products</button>
+    <br>
+    <br>
+    <iframe src="bestseller.html" height="600px" width="100%" title="Iframe Example" style="border: none;" id="ifarame"></iframe>
+  </div>
+  <div class="bottom">
+    <fieldset>
+      <legend>Our Services</legend>
+      <table>
+        <tr>
+
+          <td style="display:inline;"><img src="Images/lastlogo1.png" style="margin-left:150px;">
+          </td>
+          <td>
+            <p style="font-size: larger; margin:2px 30px 0 0px">Free Delievery</p>
+          </td>
+          <td style="display:inline;"><img src="Images/lastlogo2.png" style="margin-left:50px;">
+          </td>
+          <td>
+            <p style="font-size: larger; margin:2px 30px 0 0px">Sales And Discounts</p>
+          </td>
+
+          <td style="display:inline;"><img src="Images/lastlogo3.jpg"
+              style="height: 60px; width:60px; margin-left: 50px;">
+          </td>
+          <td>
+            <p style="font-size: larger; margin:1px 30px 0 0px">Easy Return Policy</p>
+          </td>
+
+
+          <td><img src="Images/lastlogo4.png" style="margin-left:50px;"></td>
+
+          <td>
+            <p style="font-size: larger; margin-top: 15px;">Quality Assurance</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p style="margin-left:180px;">All India free delivery on<br> orders above 9999/-</p>
+          </td>
+          <td colspan="2">
+            <p style="margin-left:50px;">Flat 50% OFF, Hurry up before the stock ends</p>
+          </td>
+          <td colspan="2">
+            <p style="margin-left:80px;">14 Days Hassle Free Return</p>
+          </td>
+          <td colspan="2">
+            <p style="margin-left:100px;">When quality is in our mind <br>Defect will stay behind.</p>
+          </td>
+        </tr>
+      </table>
+
+
+
+    </fieldset>
+
+  </div>
+  <div class="contact-info">
+    <div class="card">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
+      <div class="card-content">
+        <h3>Email</h3>
+        <span>parteeksethi20@gmail.com</span>
+      </div>
+    </div>
+  
+    <div class="card">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"/></svg>
+      <div class="card-content">
+        <h3>Parteek</h3>
+        <span>+919315050400</span>
+      </div>
+    </div>
+  
+   
+  </div>
+<script>
+  function changeimage1(){
+    
+    let displayimage = document.getElementById('firstimg')
+   
+    displayimage.src = 'Images/firstimg.png'
+    let btn = document.getElementById('bttn1')
+    btn.style.backgroundColor = 'black'
+    
+  }
+  function changeimage2(){
+    
+    let displayimage = document.getElementById('firstimg')
+   
+    displayimage.src = 'Images/laptop_one.png'
+    
+  }
+  
+  function changeimage3(){
+    
+    let displayimage = document.getElementById('firstimg')
+   
+    displayimage.src = 'Images/Category_main.png'
+    
+  }
+  function changeimage4(){
+    
+    let displayimage = document.getElementById('firstimg')
+   
+    displayimage.src = 'Images/saleofday_two.png'
+    
+  }
+  function changepage1(){
+    let displaypage = document.getElementById('ifarame')
+    displaypage.src = 'bestseller.html'
+   
+  }
+  function changepage2(){
+    let displaypage = document.getElementById('ifarame')
+    displaypage.src = 'mostviewed.html'
+  }
+  function changepage3(){
+    let displaypage = document.getElementById('ifarame')
+    displaypage.src = 'toprated.html'
+  }
+  function changeimage(){
+    let displayimagee = document.getElementById('firstimg')
+    
+  }
+  
+</script>
+</body>
+
+</html>

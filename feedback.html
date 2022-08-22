@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tell us your feedback</title>
+  <link rel="stylesheet" href="nav.css">
+  <style>
+    * {
+      font-family: sans-serif;
+      color: white;
+    }
+      input{
+        color: black;
+      }
+    body {
+      background-image: url(images/abdul-a-0si69BeGjoI-unsplash.jpg);
+      background-size: cover;
+      width: 100%;
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+
+    <div class="hero">
+      <nav>
+        <a href="home.html" style="text-decoration: none;"><h2 class="logo">The Gadget <span>Mart</span>
+
+        </h2></a>
+        
+
+
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="feedback.html" style="color: red;">Feedback</a></li>
+
+          <button type="button"><a href="login.html" style="color: white; text-decoration:none;">Log In</a></button>
+
+        </ul>
+
+      </nav>
+    </div>
+    </header>
+    <div id="hideall">
+    <form action="https://formsubmit.co/el/huxipo" method="POST">
+      <fieldset class="box">
+        <b style="margin-left:660px;">Feedback</b>
+
+        <h4 style="margin-left:600px;">We value your feedback</h4>
+        <p style="margin-left:500px;">Please fill the form and help us to improve customer expierence</p>
+        <br>
+        <br>
+        <label for="fname" style="margin-left:300px;">First Name</label>
+        <input type="text" name="name" id="firstname" required>
+
+        <label for="lname">Last Name</label>
+        <input type="text" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" name="email" required>
+        <br><br>
+        <div class="dropdown" style="margin-left:600px;">
+          Category:
+          <select style="height: 30px; background-color:black;color:white;" required>
+            <option>Refrigerator</option>
+            <option>Smart-Phones</option>
+            <option>Microwave</option>
+            <option>Air-Conditioner</option>
+          </select>
+        </div>
+        <br>
+        <br>
+
+        <table style="margin-left:300px;">
+          <tr>
+            <th></th>
+            <th style="padding: 10px;"> Very Satisfied </th>
+            <th style="padding: 10px;">Satisfied</th>
+            <th style="padding: 10px;">Neutral</th>
+            <th style="padding: 10px;">Unsatisfied</th>
+            <th style="padding: 10px;">Very Unsatisfied</th>
+
+          </tr>
+          <tr>
+            <th>How satisfied are you with product</th>
+            <td style="padding: 10px; padding-left: 40px ;"><input type="checkbox"></td>
+            <td style="padding: 10px; padding-left: 40px ;"><input type="checkbox"></td>
+            <td style="padding: 10px; padding-left: 40px ;"><input type="checkbox"></td>
+            <td style="padding: 10px; padding-left: 40px ;"><input type="checkbox"></td>
+            <td style="padding: 10px; padding-left: 40px ;"><input type="checkbox"></td>
+
+          </tr>
+          <tr>
+            <th>How satisfied are you with our service</th>
+            <td style="padding: 10px; padding-left: 40px ;"><input type="checkbox"></td>
+            <td style="padding: 10px; padding-left: 40px ;"><input type="checkbox" ch></td>
+            <td style="padding: 10px; padding-left: 40px ;"><input type="checkbox"></td>
+            <td style="padding: 10px; padding-left: 40px ;"><input type="checkbox"></td>
+            <td style="padding: 10px; padding-left: 40px ;"><input type="checkbox"></td>
+
+          </tr>
+          <tr>
+            <th>How satisfied are you with our team</th>
+            <td style="padding: 10px; padding-left: 40px ;"><input type="checkbox"></td>
+            <td style="padding: 10px; padding-left: 40px ;"><input type="checkbox"></td>
+            <td style="padding: 10px; padding-left: 40px ;"><input type="checkbox"></td>
+            <td style="padding: 10px; padding-left: 40px ;"><input type="checkbox"></td>
+            <td style="padding: 10px; padding-left: 40px ;"><input type="checkbox"></td>
+
+          </tr>
+
+
+        </table>
+        <div class="textarea">
+          <form>
+            <p><label for="review" style="margin-left:500px;">Tell us how we can improve</label></p>
+            <textarea id="review" name="w3review" rows="4" cols="50" style="margin-left:500px; color: black;" required></textarea>
+            <br>
+            <br>
+
+            <input type="submit" value="Submit" onclick="changepage()"
+              style="margin-left:500px; color: white; background-color: black; height: 40px; width: 100px;">
+          </form>
+        </div>
+
+
+      </fieldset>
+    </form>
+    </div>
+    <div style="display: none;text-align: center; margin: 200px;" id="welcomeback" >
+      <h1 style="color: white;">THANKS FOR THE FEEDBACK</h1>
+      <h2 id="nameneww" style="color: red;"></h2>
+     </div>
+    <script>
+                function changepage(){
+                  var content = document.getElementById("hideall");
+                  content.style.display = "none";
+                 
+                  
+                   document.getElementById('nameneww').innerText=document.getElementById('firstname').value;
+                   document.getElementById("welcomeback").style.display="block";
+                 
+                   
+      
+
+                }
+
+    </script>
+</body>
+
+</html>
